@@ -1,0 +1,100 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1350')
+		meta(name='description', content='')
+		title МО_раздел
+		// CSS
+		link(href='css/normalize.css', rel='stylesheet', media='screen')
+		link(href='css/bootstrap-grid.css', rel='stylesheet', media='screen')
+		link(href='css/jquery.fancybox.css', rel='stylesheet', media='screen')
+		link(href='css/fontello.css', rel='stylesheet', media='screen')
+		link(href='css/style.css', rel='stylesheet', media='screen')
+		link(href='css/media.css', rel='stylesheet', media='screen')
+		// jQuery
+		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+		script.
+			window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\\/script>')
+		// JavaScripts
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/scripts.js')
+	body
+		include includes/header.jade
+
+		section.section
+			.container
+				.row
+					.col-lg-8.col-lg-offset-2.no-padding
+						ul.breadcrumb
+							li.breadcrumb__item
+								a(href="#!") Главная
+							li.breadcrumb__item
+								a(href="#!") Система образования
+							li.breadcrumb__item Дошкольное образование
+
+				.row
+					.col-lg-8.col-lg-offset-2.no-padding.text-center
+						h1 Общая информация
+
+				.row
+					.col-lg-2.col-lg-offset-2.no-l-padding
+						.sidebar
+							.sidebar__title Общая информация
+							ul.sidebar__list
+								li.sidebar__item
+									a(href="#!") Реквизиты и режим работы
+								li.sidebar__item
+									a(href="#!") Положение о Министерстве образования Республики Беларусь
+								li.sidebar__item
+									a(href="#!") Законодательные акты в сфере образования
+								li.sidebar__item
+									a(href="#!") Структура Министерства образования Республики Беларусь
+
+					.col-lg-6
+						.content
+							p Национальное образование Республики Беларусь традиционно является одной из высших ценностей белорусского народа.
+							p Свидетельством достигнутых результатов являются досрочное выполнение Республикой Беларусь ряда Целей развития тысячелетия, высокий уровень человеческого развития, обеспечение политической и социально-экономической.
+							p.img-center
+								img(src="img/objects.png", alt="objects")
+							p Государственная политика в сфере образования базируется на укреплении ведущих принципов развития белорусской школы, среди которых:
+							ul
+								li государственно-общественный характер управления;
+								li обеспечение принципа справедливости, равного доступа к образованию;
+								li повышение качества образования для каждого.
+							p Приоритетными также являются задачи обеспечения функциональной грамотности населения за счет развития сети учреждений профессионально-технического, среднего специального и высшего образования.
+							p В настоящее время в стране работают свыше 8 тыс. учреждений образования, представляющих все его уровни, в которых обучение и воспитание более 3 млн. детей, учащихся, студентов и слушателей обеспечивают около 430 тыс. работников системы образования.
+							p Республика Беларусь в рейтинге государств по индексу человеческого развития по показателям в сфере образования относится к государствам с очень высоким уровнем человеческого развития.
+							a(href="#!") Голосование
+							p Государственная политика в сфере образования базируется на укреплении ведущих принципов развития белорусской школы, среди которых:
+							ol
+								li государственно-общественный характер управления;
+								li обеспечение принципа справедливости, равного доступа к образованию;
+								li повышение качества образования для каждого.
+							table
+								tr.t-header
+									th.t-header__col.t-header__col-1 Номер
+									th.t-header__col.t-header__col-2 Текст
+									th.t-header__col.t-header__col-3 Цена
+								tr.t-body
+									td.t-body__col.t-body__col-1 1
+									td.t-body__col.t-body__col-2 Многие программы электронной вёрстки 
+									td.t-body__col.t-body__col-3 12.38
+								tr.t-body.t-body-color
+									td.t-body__col.t-body__col-1 2
+									td.t-body__col.t-body__col-2 Lorem Ipsum получил много версий
+									td.t-body__col.t-body__col-3 12.38
+								tr.t-body
+									td.t-body__col.t-body__col-1 3
+									td.t-body__col.t-body__col-2 Многие программы электронной вёрстки 
+									td.t-body__col.t-body__col-3 12.38
+								tr.t-body.t-body-color
+									td.t-body__col.t-body__col-1 4
+									td.t-body__col.t-body__col-2 Lorem Ipsum получил много версий
+									td.t-body__col.t-body__col-3 12.38
+							blockquote
+								p Приоритетными также являются задачи обеспечения функциональной грамотности населения за счет развития сети учреждений профессионально-технического, среднего специального и высшего.
+								.quote-signature Карпенко Игорь Васильевич, министр образования РБ
+
+
+		include includes/footer.jade

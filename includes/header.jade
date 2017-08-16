@@ -1,0 +1,44 @@
+header
+	.headerTop
+		.container
+			.row
+				.col-lg-8.col-lg-offset-2.flex-sb.no-padding
+					a(href='#!').visuallyImpaired.flex
+						img(src="img/eye.svg", alt="Версия для слабовидящих")
+						p Версия для слабовидящих
+					.language.flex-sb
+						a(href='#!').language__bel.flex
+							.language__flag.language__flag-bel
+							p Бел
+						a(href='#!').language__rus.flex
+							.language__flag.language__flag-rus
+							p Рус
+						a(href='#!').language__eng.flex
+							.language__flag.language__flag-eng
+							p Eng
+	.headerMain
+		.container
+			.row
+				.col-lg-8.col-lg-offset-2.no-padding
+					.headerMain__logo
+					.headerMain__title Министерство образования Республики Беларусь
+			.row
+				.col-lg-8.col-lg-offset-2.no-padding
+					nav
+						ul.navList.flex-sb
+							li.navList__item
+								a(href="#!") О Министерстве
+							li.navList__item
+								a(href="#!") Структура
+							li.navList__item
+								a(href="#!") Территориальные органы
+							li.navList__item
+								a(href="#!") Статистика
+							li.navList__item
+								a(href="#!") Телефоны
+							li.navList__item.navList__item-search
+						form(action="").search-form
+							.search-form__input
+								input(type="search", placeholder="Поиск")
+								button(type='reset').reset
+							button.search-form__btn

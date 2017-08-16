@@ -1,0 +1,228 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1350')
+		meta(name='description', content='')
+		title MinObraz
+		// CSS
+		link(href='css/normalize.css', rel='stylesheet', media='screen')
+		link(href='css/bootstrap-grid.css', rel='stylesheet', media='screen')
+		link(href='css/jquery.fancybox.css', rel='stylesheet', media='screen')
+		link(href='css/fontello.css', rel='stylesheet', media='screen')
+		link(href='css/style.css', rel='stylesheet', media='screen')
+		link(href='css/media.css', rel='stylesheet', media='screen')
+		// jQuery
+		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+		script.
+			window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\\/script>')
+		// JavaScripts
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/scripts.js')
+	body
+		include includes/header.jade
+
+		section.educationSystem
+				.educationSystem-header
+					.container.flex
+						h2 Система образования
+				.educationSystem-main
+					.container
+						.row
+							.col-lg-10.col-lg-offset-1.flex-sb.no-padding
+								a(href="#!").eduSysItem.eduSysItem-1
+									.eduSysItem__icon.eduSysItem__icon-1
+									h3 Дошкольное образование
+								a(href="#!").eduSysItem.eduSysItem-2
+									.eduSysItem__icon.eduSysItem__icon-2
+									h3 Общее средне образование
+								a(href="#!").eduSysItem.eduSysItem-3
+									.eduSysItem__icon.eduSysItem__icon-3
+									h3 Высшее образование
+								a(href="#!").eduSysItem.eduSysItem-4
+									.eduSysItem__icon.eduSysItem__icon-4
+									h3 Послевузовское образование и наука
+								a(href="#!").eduSysItem.eduSysItem-5
+									.eduSysItem__icon.eduSysItem__icon-5
+									h3 Послевузовское образование и наука
+								a(href="#!").eduSysItem.eduSysItem-6
+									.eduSysItem__icon.eduSysItem__icon-6
+									h3 Профессиональное образование
+								a(href="#!").eduSysItem.eduSysItem-7
+									.eduSysItem__icon.eduSysItem__icon-7
+									h3 Дополнительное образование детей
+								a(href="#!").eduSysItem.eduSysItem-8
+									.eduSysItem__icon.eduSysItem__icon-8
+									h3 Инклюзивное образование
+								a(href="#!").eduSysItem.eduSysItem-9
+									.eduSysItem__icon.eduSysItem__icon-9
+									h3 Молодежная политика
+								a(href="#!").eduSysItem.eduSysItem-10
+									.eduSysItem__icon.eduSysItem__icon-10
+									h3 Доп. образование для взрослых
+
+		section.management
+			.management-header
+				.container.flex
+						h2 Руководство
+			.management-main
+				.container
+					.row
+						.col-lg-8.col-lg-offset-2.no-padding.flex-sb
+							a(href="#!").managementItem
+								.managementItem__photo.managementItem__photo-1
+								h3 Министр образования Республики Беларусь
+								.managementItem__name
+									span Карпенко
+									p Игорь Васильевич
+							a(href="#!").managementItem
+								.managementItem__photo.managementItem__photo-2
+								h3 Первый заместитель Министра образования Республики Беларусь
+								.managementItem__name
+									span Богуш
+									p Вадим Анатольевич
+							a(href="#!").managementItem
+								.managementItem__photo.managementItem__photo-3
+								h3 Заместитель Министра образования Республики Беларусь
+								.managementItem__name
+									span Сидоренко
+									p Раиса Станиславовна
+							a(href="#!").managementItem
+								.managementItem__photo.managementItem__photo-4
+								h3 Заместитель Министра образования Республики Беларусь
+								.managementItem__name
+									span Рудый
+									p Сергей Валентинович
+
+		section.newsBlock
+			.newsBlock-header
+				.container.flex
+						h2 Новости
+			.newsBlock-main
+				.container
+					.row
+						.col-lg-4.col-lg-offset-2.no-l-padding
+							a(href="#!").topNews
+								.topNews__date
+									span 27 июля
+								.topNews__photo
+								.topNews__title
+									p Минобразования установило перечень предметов школьных выпускных экзаменов в 2017/2018 учебном году
+						.col-lg-4.no-r-padding
+							.newsList
+								a(href="#!").newsListItem
+									.newsListItem__date
+										span 26 июля
+									.newsListItem__title
+										p Зачисление на бюджетную форму обучения: БГУИР и силовые вузы
+								a(href="#!").newsListItem
+									.newsListItem__date
+										span 25 июля
+									.newsListItem__title
+										p Объявлен дополнительный набор в вузы Беларуси на вакантные места
+								a(href="#!").newsListItem
+									.newsListItem__date
+										span 24 июля
+									.newsListItem__title
+										p Новые победы белорусских учащихся на международных олимпиадах
+								a(href="#!").newsListItem
+									.newsListItem__date
+										span 19 июля
+									.newsListItem__title
+										p МГЛУ откроет первый в Беларуси факультет китайского языка и культуры
+								a(href="#!").newsListItem.newsListItem-archive
+										span Архив новостей
+
+		section.photoVideo
+			.photoVideo-header
+				.container.flex
+						h2 Фото и видео
+			.photoVideo-main
+				.container
+					.row
+						.col-lg-4.col-lg-offset-2.no-l-padding
+							.photo
+								.photoBlock
+									a(href='img/foto_1.jpg', data-fancybox='images').photoBlock__item
+										img(src="img/foto_1.jpg", alt="фото1")
+									a(href='img/foto_2.jpg', data-fancybox='images').photoBlock__item
+										img(src="img/foto_2.jpg", alt="фото1")
+									a(href='img/foto_3.jpg', data-fancybox='images').photoBlock__item
+										img(src="img/foto_3.jpg", alt="фото1")
+									a(href='img/foto_4.jpg', data-fancybox='images').photoBlock__item
+										img(src="img/foto_4.jpg", alt="фото1")
+								.photoLink
+									a(href="#!") Все фото
+						.col-lg-4.no-r-padding
+							.video
+								.videoWrap
+									a(href="https://www.youtube.com/watch?v=cIyVNoY3_L4", data-fancybox)
+										img(src="img/video_poster.jpg", alt="poster")
+								.videoLink
+									a(href="#!") Все видео
+
+		section.name
+			.name-header
+				.container.flex
+					h2 Название
+			.name-main
+				.container
+					.row
+						.col-lg-3.col-lg-offset-2.no-l-padding
+							a(href="#!").nameItem
+								.itemTitle
+									.itemTitle__logo.itemTitle__logo-1
+									h5.h5-1 Национальный образовательный портал
+								ul.itemList
+									li.itemList__item Типовые формы договоров
+									li.itemList__item Нормативные правовые документы
+									li.itemList__item Инструкция о порядке проведения
+						.col-lg-2
+							a(href="#!").nameItem.nameItem-small
+								.itemTitle
+									.itemTitle__logo.itemTitle__logo-3
+									h5.h5-3 Главный информационно-аналитический центр
+								ul.itemList
+									li.itemList__item Типовые формы
+									li.itemList__item Нормативные правовые
+									li.itemList__item Инструкция о порядке
+						.col-lg-3.no-r-padding
+							a(href="#!").nameItem
+								.itemTitle
+									.itemTitle__logo.itemTitle__logo-5
+									h5.h5-5 Академия последипломного образования
+								ul.itemList
+									li.itemList__item Типовые формы договоров
+									li.itemList__item Нормативные правовые документы
+									li.itemList__item Инструкция о порядке проведения
+					.row
+						.col-lg-3.col-lg-offset-2.no-l-padding
+							a(href="#!").nameItem
+								.itemTitle
+									.itemTitle__logo.itemTitle__logo-2
+									h5.h5-2 Республиканский портал "Профессиональное образование"
+								ul.itemList
+									li.itemList__item Типовые формы договоров
+									li.itemList__item Нормативные правовые документы
+									li.itemList__item Инструкция о порядке проведения
+						.col-lg-2
+							a(href="#!").nameItem.nameItem-small
+								.itemTitle
+									.itemTitle__logo.itemTitle__logo-4
+									h5.h5-4 Республиканский институт контроля знаний
+								ul.itemList
+									li.itemList__item Типовые формы
+									li.itemList__item Нормативные правовые
+									li.itemList__item Инструкция о порядке
+						.col-lg-3.no-r-padding
+							a(href="#!").nameItem
+								.itemTitle
+									.itemTitle__logo.itemTitle__logo-6
+									h5.h5-6 Республиканский институт высшей школы
+								ul.itemList
+									li.itemList__item Типовые формы договоров
+									li.itemList__item Нормативные правовые документы
+									li.itemList__item Инструкция о порядке проведения
+
+
+		include includes/footer.jade

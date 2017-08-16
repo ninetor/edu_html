@@ -1,0 +1,111 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1350')
+		meta(name='description', content='')
+		title МО_новость
+		// CSS
+		link(href='css/normalize.css', rel='stylesheet', media='screen')
+		link(href='css/bootstrap-grid.css', rel='stylesheet', media='screen')
+		link(href='css/jquery.fancybox.css', rel='stylesheet', media='screen')
+		link(href='css/slick.css', rel='stylesheet', media='screen')
+		link(href='css/slick-theme.css', rel='stylesheet', media='screen')
+		link(href='css/fontello.css', rel='stylesheet', media='screen')
+		link(href='css/style.css', rel='stylesheet', media='screen')
+		link(href='css/media.css', rel='stylesheet', media='screen')
+		// jQuery
+		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+		script.
+			window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\\/script>')
+		// JavaScripts
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/scripts.js')
+	body
+		include includes/header.jade
+
+		section.news
+			.container
+				.row
+					.col-lg-8.col-lg-offset-2.no-padding
+						ul.breadcrumb
+							li.breadcrumb__item
+								a(href="#!") Главная
+							li.breadcrumb__item
+								a(href="#!") Новости
+							li.breadcrumb__item Заголовок новости
+
+				.row
+					.col-lg-8.col-lg-offset-2.no-padding.text-center
+						h1 Заголовок страницы
+
+				.row
+					.col-lg-2.col-lg-offset-2.no-l-padding
+						.sidebar
+							a(href="#!").sidebar-news
+								.sidebar-news__date 26 Августа 2017
+								.sidebar-news__cont
+									p Новые учебники и учебные пособия будут включать больше практико-ориентированных заданий. Еще пару слов.
+							a(href="#!").sidebar-news
+								.sidebar-news__date 25 Августа 2017
+								.sidebar-news__cont
+									p Объявлен дополнительный набор в вузы Беларуси на вакантные места
+							a(href="#!").sidebar-news
+								.sidebar-news__date 24 Августа 2017
+								.sidebar-news__cont
+									p Новые победы белорусских учащихся на международных
+							a(href="#!").sidebar-news
+								.sidebar-news__date 23 Августа 2017
+								.sidebar-news__cont
+									p Минобразования установило перечень предметов школьных выпускных экзаменов в 2017/2018 учебном году
+							a(href="#!").sidebar-news
+								.sidebar-news__date 22 Августа 2017
+								.sidebar-news__cont
+									p МГЛУ откроет первый в Беларуси факультет китайского языка и культуры
+							.sidebar__link
+								a(href="#!") Все новости
+
+
+					.col-lg-6
+						.content
+							.content__newsDate
+								| Опубликовано: 
+								a(href='#!') 27.07.2017
+							p В период с 23 по 30 июля 2017 года на базе университета Уорвика (г. Ковентри, Соединенное Королевство Великобритании и Северной Ирландии) прошла 28-ая Международная биологическая олимпиада. В олимпиаде приняли участие 260 школьников из 67 стран мира. В этом году, как и в прошлом, все участники белорусской команды вернулись домой с медалями: Галькевич Анна, выпускница гимназии № 12 г. Минска, получила серебро, Колядич Александр, Костицына Владислава (Лицей БГУ) и Тумаш Полина (средняя школа № 5 г. Сморгони) удостоены бронзовых медалей. Далеко-далеко за словесными горами в стране, гласных и согласных живут.
+							.content__video
+								a(href="https://www.youtube.com/watch?v=cIyVNoY3_L4", data-fancybox)
+									img(src="img/video_poster.jpg", alt="poster")
+							p Международная биологическая олимпиада проводится ежегодно, начиная с 1990 года. В состав сборной команды от страны входят четыре школьника – победителя национальной олимпиады. Соревнование и присуждение наград проводятся индивидуально. Золотыми медалями награждаются 10% участников, показавших лучшие результаты, следующие 20% получают серебро, еще 30% – бронзу. Оцениваются как теоретические знания, так и практические навыки участников. Руководители и тренеры команды: Панкратов Василий Сергеевич, научный сотрудник лаборатории нехромосомной наследственности Института генетики и цитологии Национальной академии наук Беларуси, кандидат биологических наук и Нестерова Оксана Львовна, доцент кафедры общей экологии и методики преподавания биологии биологического факультета БГУ, кандидат биологических наук. показателям поступления детей в начальную и среднюю школу, количеству студентов высших учебных заведений Беларусь находится на уровне развитых стран Европы и мира. Каждый третий житель республики учится.
+							.gallery
+								.gallery__title Галерея
+								.gallery__slider
+									.slide
+										a(href='img/foto_1.jpg', data-fancybox='images')
+											img(src="img/foto_1.jpg", alt="фото1")
+									.slide
+										a(href='img/foto_2.jpg', data-fancybox='images')
+											img(src="img/foto_2.jpg", alt="фото1")
+									.slide
+										a(href='img/foto_3.jpg', data-fancybox='images')
+											img(src="img/foto_3.jpg", alt="фото1")
+									.slide
+										a(href='img/foto_4.jpg', data-fancybox='images')
+											img(src="img/foto_4.jpg", alt="фото1")
+								.prev-arr
+								.next-arr
+							.content__signature Пресс-центр Министерства образования.
+							.share
+								.share__text Поделиться:
+								ul.share__list
+									li.share__item.share__item-vk
+										a(href="#!")
+									li.share__item.share__item-fb
+										a(href="#!")
+									li.share__item.share__item-insta
+										a(href="#!")
+									li.share__item.share__item-tw
+										a(href="#!")
+
+
+		include includes/footer.jade

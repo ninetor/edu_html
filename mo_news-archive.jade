@@ -1,0 +1,267 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1350')
+		meta(name='description', content='')
+		title МО_архив_новостей
+		// CSS
+		link(href='css/normalize.css', rel='stylesheet', media='screen')
+		link(href='css/bootstrap-grid.css', rel='stylesheet', media='screen')
+		link(href='css/jquery.fancybox.css', rel='stylesheet', media='screen')
+		link(href='css/slick.css', rel='stylesheet', media='screen')
+		link(href='css/slick-theme.css', rel='stylesheet', media='screen')
+		link(href='css/fontello.css', rel='stylesheet', media='screen')
+		link(href='css/style.css', rel='stylesheet', media='screen')
+		link(href='css/media.css', rel='stylesheet', media='screen')
+		// jQuery
+		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+		script.
+			window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\\/script>')
+		// JavaScripts
+		script(src='js/jquery.fancybox.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/jquery.scrollTo.min.js')
+		script(src='js/scripts.js')
+	body
+		include includes/header.jade
+
+		section.newsArchive
+			.container
+				.row
+					.col-lg-8.col-lg-offset-2.no-padding
+						ul.breadcrumb
+							li.breadcrumb__item
+								a(href="#!") Главная
+							li.breadcrumb__item Архив новостей
+
+				.row
+					.col-lg-8.col-lg-offset-2.no-padding.text-center
+						h1 Архив новостей
+
+				.row
+					.col-lg-8.col-lg-offset-2
+						.newsFilter
+							.newsFilter__title Поиск по дате:
+							.newsFilter__form
+								form(action="")
+									.newsFilter__select.newsFilter__select-year
+										.select
+											input(type="hidden").select_hidden
+											.select_in
+												span.select_title год
+												i.select_arrow
+											.select_listWrap
+												i.select_scroll.select_scroll-up
+												ul.select_list
+													li(data-value="1") 2007
+													li(data-value="2") 2008
+													li(data-value="3") 2009
+													li(data-value="4") 2010
+													li(data-value="5") 2011
+													li(data-value="6") 2012
+													li(data-value="7") 2013
+													li(data-value="8") 2014
+													li(data-value="9") 2015
+													li(data-value="10") 2016
+													li(data-value="11") 2017
+												i.select_scroll.select_scroll-down
+									.newsFilter__select.newsFilter__select-month
+										.select
+											input(type="hidden").select_hidden
+											.select_in
+												span.select_title.select_title-month месяц
+												i.select_arrow.select_arrow-month
+											.select_listWrap
+												i.select_scroll.select_scroll-up
+												ul.select_list
+													li(data-value="1") Январь
+													li(data-value="2") Февраль
+													li(data-value="3") Март
+													li(data-value="4") Апрель
+													li(data-value="5") Май
+													li(data-value="6") Июнь
+													li(data-value="7") Июль
+													li(data-value="8") Август
+													li(data-value="9") Сентябрь
+													li(data-value="10") Октябрь
+													li(data-value="11") Ноябрь
+													li(data-value="12") Декабрь
+												i.select_scroll.select_scroll-down
+									.newsFilter__select.newsFilter__select-day
+										.select
+											input(type="hidden").select_hidden
+											.select_in
+												span.select_title день
+												i.select_arrow
+											.select_listWrap
+												i.select_scroll.select_scroll-up
+												ul.select_list
+													li(data-value="1") 1
+													li(data-value="2") 2
+													li(data-value="3") 3
+													li(data-value="4") 4
+													li(data-value="5") 5
+													li(data-value="6") 6
+													li(data-value="7") 7
+													li(data-value="8") 8
+													li(data-value="9") 9
+													li(data-value="10") 10
+													li(data-value="11") 11
+													li(data-value="12") 12
+													li(data-value="13") 13
+													li(data-value="14") 14
+													li(data-value="15") 15
+													li(data-value="16") 16
+													li(data-value="17") 17
+													li(data-value="18") 18
+													li(data-value="19") 19
+													li(data-value="20") 20
+													li(data-value="21") 21
+													li(data-value="22") 22
+													li(data-value="23") 23
+													li(data-value="24") 24
+													li(data-value="25") 25
+													li(data-value="26") 26
+													li(data-value="27") 27
+													li(data-value="28") 28
+													li(data-value="29") 29
+													li(data-value="30") 30
+													li(data-value="31") 31
+												i.select_scroll.select_scroll-down
+									button.newsFilter__btn Поиск
+
+				.row
+					.col-lg-2.col-lg-offset-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-1.jpg", alt="новость")
+							.news-date 03 августа 2017
+							p Новые учебники и учебные пособия будут включать больше практико- ориентированных заданий
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-2.jpg", alt="новость")
+							.news-date 02 августа 2017
+							p Школьные программы по всем предметам доработаны и утверждены к новому учебному году.
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-3.jpg", alt="новость")
+							.news-date 01 августа 2017
+							p Студотряды на уборке урожая
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-4.jpg", alt="новость")
+							.news-date 31 июля 2017
+							p НДЦ «Зубренок» принимает японских детей
+				.row
+					.col-lg-2.col-lg-offset-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-1.jpg", alt="новость")
+							.news-date 03 августа 2017
+							p Новые учебники и учебные пособия будут включать больше практико- ориентированных заданий
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-2.jpg", alt="новость")
+							.news-date 02 августа 2017
+							p Школьные программы по всем предметам доработаны и утверждены к новому учебному году.
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-3.jpg", alt="новость")
+							.news-date 01 августа 2017
+							p Студотряды на уборке урожая
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-4.jpg", alt="новость")
+							.news-date 31 июля 2017
+							p НДЦ «Зубренок» принимает японских детей
+				.row
+					.col-lg-2.col-lg-offset-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-1.jpg", alt="новость")
+							.news-date 03 августа 2017
+							p Новые учебники и учебные пособия будут включать больше практико- ориентированных заданий
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-2.jpg", alt="новость")
+							.news-date 02 августа 2017
+							p Школьные программы по всем предметам доработаны и утверждены к новому учебному году.
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-3.jpg", alt="новость")
+							.news-date 01 августа 2017
+							p Студотряды на уборке урожая
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-4.jpg", alt="новость")
+							.news-date 31 июля 2017
+							p НДЦ «Зубренок» принимает японских детей
+				.row
+					.col-lg-2.col-lg-offset-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-1.jpg", alt="новость")
+							.news-date 03 августа 2017
+							p Новые учебники и учебные пособия будут включать больше практико- ориентированных заданий
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-2.jpg", alt="новость")
+							.news-date 02 августа 2017
+							p Школьные программы по всем предметам доработаны и утверждены к новому учебному году.
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-3.jpg", alt="новость")
+							.news-date 01 августа 2017
+							p Студотряды на уборке урожая
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-4.jpg", alt="новость")
+							.news-date 31 июля 2017
+							p НДЦ «Зубренок» принимает японских детей
+				.row
+					.col-lg-2.col-lg-offset-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-1.jpg", alt="новость")
+							.news-date 03 августа 2017
+							p Новые учебники и учебные пособия будут включать больше практико- ориентированных заданий
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-2.jpg", alt="новость")
+							.news-date 02 августа 2017
+							p Школьные программы по всем предметам доработаны и утверждены к новому учебному году.
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-3.jpg", alt="новость")
+							.news-date 01 августа 2017
+							p Студотряды на уборке урожая
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-4.jpg", alt="новость")
+							.news-date 31 июля 2017
+							p НДЦ «Зубренок» принимает японских детей
+				.row
+					.col-lg-2.col-lg-offset-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-1.jpg", alt="новость")
+							.news-date 03 августа 2017
+							p Новые учебники и учебные пособия будут включать больше практико- ориентированных заданий
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-2.jpg", alt="новость")
+							.news-date 02 августа 2017
+							p Школьные программы по всем предметам доработаны и утверждены к новому учебному году.
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-3.jpg", alt="новость")
+							.news-date 01 августа 2017
+							p Студотряды на уборке урожая
+					.col-lg-2
+						a(href='#!').newsArchive__item
+							img(src="img/news-4.jpg", alt="новость")
+							.news-date 31 июля 2017
+							p НДЦ «Зубренок» принимает японских детей
+				.row
+					.col-lg-8.col-lg-offset-2
+						a(href='#!').more-news-btn Загрузить еще
+
+
+
+
+		include includes/footer.jade
