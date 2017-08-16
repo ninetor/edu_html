@@ -40,7 +40,7 @@ html, body {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   position: relative;
-  min-width: 1350px;
+  min-width: 1330px;
   min-height: 100vh; }
 
 body {
@@ -109,6 +109,9 @@ p {
 
 li {
   list-style: none; }
+
+.container {
+  min-width: 1300px; }
 
 .clearfix:after {
   content: "";
