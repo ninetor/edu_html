@@ -34,7 +34,8 @@ $(document).ready(function(){
   		});
 	};
 
-	if (typeof $().fancybox !== "undefined") {
+	///////////// Слайдер //////////////////
+	if (typeof $().slick !== "undefined") {
 		$('.gallery__slider').slick({
 			infinite: true,
 			slidesToShow: 3,
@@ -43,7 +44,6 @@ $(document).ready(function(){
 			nextArrow: ".next-arr"
 		});
 	};
-
 
 	///////////// Кастомные селекты ////////////////////
 	$('.select').each(function(){
